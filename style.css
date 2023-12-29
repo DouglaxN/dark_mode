@@ -1,0 +1,56 @@
+:root {
+    --white: #FFF;
+    --dark: #000;
+    --purple-primary: #7a1ad4;
+    --purple-secondary: #6e17b9;
+}
+
+[data-theme="dark"] {
+    --white: #000;
+    --dark: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+button {
+    background-color: var(--purple-primary);
+    padding: .4rem;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--purple-secondary);
+    transition: 400ms;
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--white);
+    align-items: center;
+}
